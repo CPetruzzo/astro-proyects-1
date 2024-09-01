@@ -1,0 +1,26 @@
+---
+export interface Props {
+	productName: string;
+	price: string;
+	imgSrc: string;
+	id: string;
+}
+
+const { productName, price, imgSrc, id } = Astro.props;
+---
+
+<div class="col-md-4 product" data-product-name={productName}>
+	<div class="product-content">
+		<label for={id}>
+			<img src={imgSrc} alt={productName} class="img-fluid" />
+			<h3>{productName}</h3>
+			<p>Precio: ${price}</p>
+		</label>
+		<input
+			type="checkbox"
+			name="products"
+			value={`${productName} - ${price}`}
+			id={id}
+		/>
+	</div>
+</div>

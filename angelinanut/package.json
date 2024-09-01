@@ -1,0 +1,20 @@
+{
+  "name": "angelinanut",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "sheet to json": "cd public && node convertCsvToJson.js",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "astro": "^4.15.1",
+    "csvtojson": "^2.0.10",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.5.4"
+  }
+}
